@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <link rel="stylesheet" href="Css/bootstrap.min.css">   
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid  pb-3 pt-5">
+    <div class="container text-center">
+         <div class="des text-center">
+        <h1>Bookmarker</h1>
+        <div class="back"></div>
+    </div>  
+    </div>
+    <div class="container form  mt-5 pt-3 ">
+        <h2 class="text-center">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i></h2>
+            <form class="pb-4">
+                <label class="d-flex gap-2 align-items-center mt-4" for="SiteName"><i class="fa-solid fa-book"></i>Site Name</label>
+                <input class="form-control mt-2" id="SiteName" type="text" placeholder="Default input" aria-label="default input example">
+                <label class="d-flex gap-2 align-items-center mt-4" for="SiteURL"><i class="fa-solid fa-link"></i>Site URL</label>
+                <input class="form-control mt-2 " id="SiteURL" type="text" placeholder="Default input" aria-label="default input example" oninput="UrlValidation()">
+               
+                <button class="btn btn-submit px-5 m-auto d-flex mt-4 " id="submitBtn" onclick="addSite()"   >Submit</button>
+          </form>
+    </div>
+    <div class="container mt-4 ">
+        <table class="table">
+            <thead >
+              <tr class="text-center">
+                <th class="w-25" scope="col">Index</th>
+                <th class="w-25" scope="col">Website Name</th>
+                <th class="w-25" scope="col">Visit</th>
+                <th class="w-25" scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbl">
+            
+             
+            
+            </tbody>
+          </table>
+
+
+    </div>
+ 
+
+</div>
+
+    <script src="index.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+
+</body>
+</html>

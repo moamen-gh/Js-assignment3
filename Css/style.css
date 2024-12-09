@@ -1,0 +1,60 @@
+.container-fluid{
+    background-color: #F7ECDE;
+}
+.des{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+.des h1{
+    margin-top: 15px;
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    z-index: 10;
+    position: relative;
+}
+.des .back{
+ width: 100%;
+ position: absolute;
+ height: 20%;
+ bottom: 13px;
+ background-color:#FEC260 ;
+ transition: 0.3s;
+}
+.des:hover .back{
+    height: 45%;
+}
+.form{
+    border-top: 2.7px dotted black;
+    border-bottom: 2.7px dotted black;
+}
+.form h2{
+        font-family: "Righteous", cursive;
+font-size: 25px;
+font-weight: 500;
+background-image: linear-gradient(to right, #3ca55c, #cec23b);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-top: 5px;
+}
+form label{
+    font-size: 16px;
+    font-weight: 700;
+}
+.container form input:focus{
+ border: solid var(--bs-border-width) #D99C39;
+ box-shadow:0px 0px 3px 3px #fec16077;
+}
+.btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+table h6{
+    position: relative;
+    top: 10px;
+}
